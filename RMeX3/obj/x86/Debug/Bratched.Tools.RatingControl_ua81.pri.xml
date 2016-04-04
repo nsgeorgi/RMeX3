@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Bratched.Tools.RatingControl_ua81" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Bratched.Tools.RatingControl_ua81">
+				<NamedResource name="Bratched.Tools.RatingControl_ua81.xr.xml" uri="ms-resource://Bratched.Tools.RatingControl_ua81/Files/Bratched.Tools.RatingControl_ua81/Bratched.Tools.RatingControl_ua81.xr.xml">
+					<Candidate type="Path">
+						<Value>Bratched.Tools.RatingControl_ua81\Bratched.Tools.RatingControl_ua81.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RateItem.xaml" uri="ms-resource://Bratched.Tools.RatingControl_ua81/Files/Bratched.Tools.RatingControl_ua81/RateItem.xaml">
+					<Candidate type="Path">
+						<Value>Bratched.Tools.RatingControl_ua81\RateItem.xaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RateItem.xbf" uri="ms-resource://Bratched.Tools.RatingControl_ua81/Files/Bratched.Tools.RatingControl_ua81/RateItem.xbf">
+					<Candidate type="Path">
+						<Value>Bratched.Tools.RatingControl_ua81\RateItem.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RatingControl.xaml" uri="ms-resource://Bratched.Tools.RatingControl_ua81/Files/Bratched.Tools.RatingControl_ua81/RatingControl.xaml">
+					<Candidate type="Path">
+						<Value>Bratched.Tools.RatingControl_ua81\RatingControl.xaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RatingControl.xbf" uri="ms-resource://Bratched.Tools.RatingControl_ua81/Files/Bratched.Tools.RatingControl_ua81/RatingControl.xbf">
+					<Candidate type="Path">
+						<Value>Bratched.Tools.RatingControl_ua81\RatingControl.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

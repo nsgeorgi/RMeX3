@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="RMeX3.Settings_page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RMeX3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Background="#FF98D5F1" >
+                <Button x:ConnectionId='3' x:Name="BackButton" FontFamily="Segoe MDL2 Assets" Content="&#59179;" Width="50" Height="50" Background="Transparent"                          FontWeight="Bold" FontSize="20" ClickMode="Press"/>
+                    <StackPanel Orientation="Vertical" Height="50">
+                            <TextBlock FontSize="18" Margin="80,12,0,0" >Settings</TextBlock>
+                    </StackPanel>
+            </StackPanel>
+           
+            <StackPanel Orientation="Horizontal" Height="20" >
+            </StackPanel>
+           
+            <StackPanel Orientation="Horizontal" Height="55" Background="#FFDFE1E2" >
+                    <TextBlock FontSize="18" Margin="10,15,0,10" >General Settings</TextBlock>
+                <Button x:ConnectionId='2' x:Name="Button1" FontFamily="Segoe MDL2 Assets" Content="&#59178;" Width="60" Height="50" Background="Transparent"                       FontWeight="Bold" FontSize="20" Margin="110,0,0,0" ClickMode="Press"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Height="20" >
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Height="55" Background="#FFDFE1E2">
+                 <TextBlock FontSize="18" Margin="10,15,0,10" >Personal Info Settings</TextBlock>
+                    <Button x:ConnectionId='1' x:Name="Button2" FontFamily="Segoe MDL2 Assets" Content="&#59178;" Width="60" Height="50" Background="Transparent"                       FontWeight="Bold" FontSize="20" Margin="65,0,0,0" ClickMode="Press"/>
+            </StackPanel>
+           
+        </StackPanel>
+                  
+    </Grid>
+</Page>
+

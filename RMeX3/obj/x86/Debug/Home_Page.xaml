@@ -1,0 +1,88 @@
+﻿<Page
+    x:Class="RMeX3.Home_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RMeX3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <SplitView x:ConnectionId='1' x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="250">
+            <SplitView.Pane>
+                <StackPanel Background="#FF98D5F1">
+                    <StackPanel Orientation="Horizontal" Background="White">
+                        <Button x:ConnectionId='10' x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="50" Height="50" Background="Transparent"                               ClickMode="Press"/>
+                        <StackPanel x:ConnectionId='11' x:Name="imagePanel" Margin="10,3,0,3" Orientation="Horizontal" Height="50"   >
+                            <Image Source="Assets/RMeX.png" ></Image >
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Background="#FF66A1C3">
+                        <Button x:ConnectionId='9' x:Name="Home_Button" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;" Width="50" Height="50" Background="{x:Null}"                            />
+                        <TextBlock Text="Home" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='8' x:Name="AudioGuidance_Button" FontFamily="Segoe MDL2 Assets" Content="&#xE767;" Width="50" Height="50" Background="Transparent"                                    />
+                        <TextBlock Text="Audio Guidance" FontSize="18" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='7' x:Name="Settings_Button" FontFamily="Segoe MDL2 Assets" Content="&#xE713;" Width="50" Height="50" Background="Transparent"                              />
+                        <TextBlock Text="Settings" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <Button x:ConnectionId='6' x:Name="PrivacyPolicy_Button" FontFamily="Segoe MDL2 Assets" Content="&#xE8A6;" Width="50" Height="50" Background="Transparent"                                     />
+                        <TextBlock Text="Privacy Policy" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"  >
+                        <Button x:ConnectionId='5' x:Name="TermsofService_Button" FontFamily="Segoe MDL2 Assets" Content="&#xE8F1;" Width="50" Height="50" Background="Transparent"                                      />
+                        <TextBlock Text="Terms of Service" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='4' x:Name="Feedback_Button" FontFamily="Segoe MDL2 Assets" Content="&#xE90A;" Width="50" Height="50" Background="Transparent"                               />
+                        <TextBlock Text="Feedback" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='3' x:Name="About_Button" FontFamily="Segoe MDL2 Assets" Content="&#xE76E;" Width="50" Height="50" Background="Transparent"                            />
+                        <TextBlock Text="About" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='2' x:Name="SignOut_Button" FontFamily="Segoe MDL2 Assets" Content=" &#xE830;" Width="50" Height="50" Background="Transparent"                             />
+                        <TextBlock Text="Sign out" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid>
+                    <ScrollViewer x:ConnectionId='12' x:Name="sv" HorizontalScrollBarVisibility="Auto"
+                            VerticalScrollBarVisibility="Auto"
+                          
+                  ZoomMode="Enabled"
+                            
+                            MaxZoomFactor="2.5"
+                            Margin="10,10,22,10" Width="328"  >
+                        <Canvas x:ConnectionId='13' x:Name="Floorplan" RenderTransformOrigin="0.415,0.451" Margin="0,0,0,0">
+                            <TextBox x:ConnectionId='14'  x:Name="tb" Canvas.Left="6" Margin="0" Canvas.Top="4" Text="" Width="208" RenderTransformOrigin="1.019,0.659" PlaceholderText="Search a room e.g. Room 2"/>
+                            <Button x:ConnectionId='15' x:Name="button1"  Canvas.Left="219" Canvas.Top="4" Width="59" Height="30"                       Background="White" BorderBrush="#FF191818">
+                                <Image Source="Assets/search3.png" Margin="-4,-4,-4,0"/>
+
+                            </Button>
+
+                            <Image Source="Assets/floor3.png" Height="503" Width="338" Canvas.Top="47" Canvas.Left="-30">
+
+                            </Image>
+                            <TextBlock x:ConnectionId='16' x:Name="textBlock_1" Canvas.Left="185" TextWrapping="Wrap" Text="Distance: 0.0 m" Canvas.Top="64" FontSize="9.333"/>
+                            <Border BorderBrush="Black" BorderThickness="1" Height="54" Canvas.Left="183" Canvas.Top="61" Width="66"/>
+                            <Image Source="Assets/walk.png" Height="22" Canvas.Left="201" Canvas.Top="78" Width="22"/>
+                            <TextBlock x:ConnectionId='17' x:Name="textBlock_2" Canvas.Left="185" TextWrapping="Wrap" Text="Time: 0.0 min" Canvas.Top="102" FontSize="9.333"/>
+
+                        </Canvas>
+                    </ScrollViewer>
+
+                </Grid>
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+</Page>
+
+
